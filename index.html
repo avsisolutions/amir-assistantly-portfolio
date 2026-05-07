@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Privacy-safe portfolio for Amir, focused on AI systems, automation, workflows, web systems, and operations."
+    content="Privacy-safe portfolio for Amir, focused on AI systems, automation, workflows, custom tools, web systems, and operations."
   />
 
   <link rel="stylesheet" href="style.css" />
@@ -39,7 +39,7 @@
 
           <p class="hero-text">
             I’m Amir, an automation and systems builder with experience across AI workflows,
-            web systems, real estate-related operations, content workflows, internal tools,
+            custom internal tools, web systems, real estate-related operations, content workflows,
             and documentation. I help teams move from manual processes to repeatable systems
             that are easier to run, improve, and scale.
           </p>
@@ -101,6 +101,16 @@
             </p>
           </article>
         </div>
+
+        <div class="notice-card">
+          <h3>Portfolio Note</h3>
+          <p>
+            The projects shown here are selected examples that can be shared publicly or in a
+            sanitized format. Several other systems I have worked on involve private client
+            operations, internal data, and proprietary workflows, so they are not shown in detail
+            out of respect for client confidentiality.
+          </p>
+        </div>
       </section>
 
       <section id="skills" class="tab-panel">
@@ -119,6 +129,8 @@
               <span>OpenAI</span>
               <span>ChatGPT</span>
               <span>Claude</span>
+              <span>Perplexity</span>
+              <span>DALL·E</span>
               <span>Webhooks</span>
               <span>API Workflows</span>
               <span>Google Sheets Automation</span>
@@ -137,6 +149,21 @@
               <span>CSS</span>
               <span>JavaScript</span>
               <span>PHP</span>
+              <span>CMS QA</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Custom Tools & Backend</h3>
+            <div class="pill-group">
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>Docker</span>
+              <span>SQL Logic</span>
+              <span>Structured Data</span>
+              <span>Local Apps</span>
             </div>
           </article>
 
@@ -166,6 +193,18 @@
               <span>Conversion QA</span>
             </div>
           </article>
+
+          <article class="skill-card">
+            <h3>Real Estate & Operations Context</h3>
+            <div class="pill-group">
+              <span>Real Estate Education</span>
+              <span>Course Workflows</span>
+              <span>Student Flows</span>
+              <span>Operational Tracking</span>
+              <span>Document Workflows</span>
+              <span>Reporting Logic</span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -173,176 +212,332 @@
         <div class="section-heading">
           <p class="eyebrow">Projects</p>
           <h2>Selected work</h2>
+          <p class="section-subtext">
+            Selected examples only. Some work is summarized, anonymized, or sanitized to protect
+            client confidentiality.
+          </p>
         </div>
 
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card featured-project">
             <div class="project-topline">
-              <span>AI Workflow</span>
-              <span>Automation</span>
+              <span>B2B SaaS</span>
+              <span>n8n Workflow</span>
+              <span>Webflow CMS</span>
             </div>
 
-            <h3>AI Job Matching & Application Workflow</h3>
+            <h3>AI Blog Automation & Webflow CMS Publishing System</h3>
+
+            <p class="project-client">Client: B2B SaaS company</p>
 
             <p>
-              Built an AI-assisted workflow for reviewing job posts, matching role requirements
-              against experience, preparing tailored application content, and organizing results
-              into a repeatable process.
+              Built an AI-assisted blog production workflow that turns scheduled content inputs into
+              researched, optimized, QA-ready blog drafts and prepares them for publishing inside
+              Webflow CMS. The workflow is intentionally detailed because it accounts for client-specific
+              content preferences, SEO rules, formatting standards, approval steps, and publishing requirements.
             </p>
 
-            <ul>
-              <li>Automated job post intake and analysis</li>
-              <li>Matched requirements against skills and project history</li>
-              <li>Generated structured application materials</li>
-              <li>Improved consistency and speed of job review</li>
-            </ul>
+            <div class="case-study-block">
+              <h4>Problem</h4>
+              <p>
+                The content process required multiple manual steps: topic planning, research, drafting,
+                SEO optimization, formatting, image preparation, QA review, Webflow CMS entry, and
+                status tracking. This made publishing slower and harder to scale consistently.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Google Sheets-based schedule and configuration system for managing blog inputs</li>
+                <li>Content source logic supporting keywords, URLs, blog ideas, and manual overrides</li>
+                <li>AI research step using Perplexity Sonar Deep Research</li>
+                <li>AI-generated content plan, draft post, and optimized blog version</li>
+                <li>Webflow-ready structured output with title, slug, summary, metadata, category, and read time</li>
+                <li>Google Docs QA document for human review before publishing</li>
+                <li>AI-generated hero image flow with file upload and sharing steps</li>
+                <li>Webflow CMS draft creation through API integration</li>
+                <li>Google Sheets logging for publishing status, slug, title, image URL, and alt text</li>
+              </ul>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Workflow Logic</h4>
+              <p>
+                Schedule row → content source decision → AI research → content plan → draft generation →
+                optimization → Webflow formatting → QA document → image generation → Webflow asset upload →
+                CMS draft creation → status logging.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Human-in-the-Loop Review</h4>
+              <p>
+                The workflow creates a QA-ready Google Doc before final publishing so a human reviewer
+                can check the content, metadata, formatting, and overall quality before it goes live.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Why the Workflow Is Detailed</h4>
+              <p>
+                The workflow includes many client-specific inputs, preferences, prompts, approval steps,
+                SEO rules, formatting requirements, and publishing checks. The goal was not just to generate
+                a blog post, but to preserve the client’s content standards while reducing the manual work
+                needed to research, draft, prepare, review, and upload each article.
+              </p>
+            </div>
 
             <div class="project-stack">
               <span>n8n</span>
               <span>OpenAI</span>
+              <span>Perplexity Sonar</span>
               <span>Google Sheets</span>
-              <span>Apify</span>
+              <span>Google Docs</span>
+              <span>Google Drive</span>
+              <span>DALL·E</span>
+              <span>Webflow API</span>
+              <span>CMS Automation</span>
+              <span>SEO Workflow</span>
+            </div>
+
+            <div class="project-visual">
+              <div class="visual-header">
+                <span>Workflow Preview</span>
+                <small>Partial n8n workflow preview. The full workflow continues into QA, image generation, Webflow CMS upload, and status logging.</small>
+              </div>
+
+              <img
+                src="sowflow-blog-automation-workflow.png"
+                alt="Sanitized partial preview of an AI blog automation workflow for Webflow CMS"
+              />
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured-project">
             <div class="project-topline">
-              <span>AI Assistant</span>
-              <span>Database</span>
-            </div>
-
-            <h3>Internal Estimates Assistant</h3>
-
-            <p>
-              Developed the concept and structure for an internal assistant that turns natural
-              language questions into controlled database queries for historical estimate data.
-            </p>
-
-            <ul>
-              <li>Designed natural language to structured query flow</li>
-              <li>Used database-backed answers instead of guesswork</li>
-              <li>Created logic for routing, SQL safety, and result explanations</li>
-              <li>Supported faster access to historical project insights</li>
-            </ul>
-
-            <div class="project-stack">
-              <span>FastAPI</span>
-              <span>PostgreSQL</span>
-              <span>OpenAI API</span>
-              <span>Docker</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Document AI</span>
-              <span>Operations</span>
+              <span>Construction</span>
+              <span>Custom Web App</span>
+              <span>Operations System</span>
             </div>
 
             <h3>Bid Monitoring & Submission Tracking System</h3>
 
+            <p class="project-client">Client: Construction company</p>
+
             <p>
-              Designed an automation system for tracking document submissions, organizing uploaded
-              files, extracting key details, and giving the team visibility into missing items
-              and deadline status.
+              Built a locally hosted system to help track bid submissions, organize incoming bid files,
+              and give the team a clearer way to monitor submitted items, missing requirements,
+              and follow-up needs.
             </p>
 
-            <ul>
-              <li>Standardized uploaded file naming</li>
-              <li>Logged submissions into a structured database</li>
-              <li>Designed dashboard logic for completion tracking</li>
-              <li>Planned daily digest alerts for outstanding items</li>
-            </ul>
+            <div class="case-study-block">
+              <h4>Problem</h4>
+              <p>
+                Bid files and requirements were being handled across multiple sources, which made it
+                harder to confirm what had been submitted, what was missing, and what still needed
+                follow-up.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Bid upload form for project, trade partner, trade, and PDF submission details</li>
+                <li>Structured workflow for organizing bid files by project, partner, and trade</li>
+                <li>AI-assisted extraction concept for pulling submission dates from uploaded PDFs</li>
+                <li>Submission logging flow for tracking files in a database</li>
+                <li>Dashboard and assistant sections planned for status review and quick project checks</li>
+              </ul>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Workflow Logic</h4>
+              <p>
+                Upload bid → extract key details → rename and organize file → log submission →
+                compare against project requirements → surface completion and missing-item status.
+              </p>
+            </div>
 
             <div class="project-stack">
-              <span>n8n</span>
-              <span>AI Vision</span>
-              <span>Airtable</span>
-              <span>API Integration</span>
+              <span>Custom Web App</span>
+              <span>Python</span>
+              <span>PDF Processing</span>
+              <span>AI Extraction</span>
+              <span>Database Logging</span>
+              <span>Operations Dashboard</span>
+            </div>
+
+            <div class="project-visual">
+              <div class="visual-header">
+                <span>Visual Preview</span>
+                <small>Locally hosted preview. Client name obscured for confidentiality.</small>
+              </div>
+
+              <img
+                src="bid-monitoring-system.webp"
+                alt="Sanitized preview of a bid monitoring submission tracking system"
+              />
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured-project">
             <div class="project-topline">
-              <span>Real Estate</span>
-              <span>Web Systems</span>
+              <span>Construction</span>
+              <span>Custom AI App</span>
+              <span>Database-Backed Assistant</span>
             </div>
 
-            <h3>Real Estate Education Website Workflow Improvements</h3>
+            <h3>Internal Estimates Assistant</h3>
+
+            <p class="project-client">Client: Construction company</p>
 
             <p>
-              Improved real estate education site workflows involving course access,
-              student dashboards, transactional emails, content structure, and user flow.
+              Built a locally hosted AI assistant concept that helps internal users ask questions
+              about historical estimating data in plain English and receive structured, verified
+              answers backed by database queries.
             </p>
 
-            <ul>
-              <li>Improved student and course navigation flows</li>
-              <li>Customized learning and commerce-related messaging</li>
-              <li>Resolved login, redirect, and dashboard usability issues</li>
-              <li>Supported clearer operational handoffs and documentation</li>
-            </ul>
+            <div class="case-study-block">
+              <h4>Problem</h4>
+              <p>
+                Historical estimate data was difficult to search quickly, and answering benchmark
+                questions often required manually checking spreadsheets, past estimates, or internal
+                project records. The team needed a faster way to access historical cost insights
+                without relying on AI-generated guesses.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Natural language question flow for internal estimating queries</li>
+                <li>AI routing layer to determine whether a question needed internal data or a general explanation</li>
+                <li>Structured query specification layer to convert user questions into controlled database requests</li>
+                <li>Validated SQL execution so numerical answers came from the database, not the AI model</li>
+                <li>Plain-English explanation layer for summarizing results for estimators and leadership</li>
+                <li>Backend guardrails to prevent unsupported datasets, unsafe columns, or malformed query logic</li>
+              </ul>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Workflow Logic</h4>
+              <p>
+                User question → AI intent routing → structured query specification → SQL validation →
+                database lookup → verified result → plain-English explanation.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <h4>Reliability Approach</h4>
+              <p>
+                The system was designed so internal financial and estimating calculations are handled
+                through deterministic database queries. AI is used for understanding the question and
+                explaining results, while the database remains the source of truth.
+              </p>
+            </div>
 
             <div class="project-stack">
-              <span>WordPress</span>
-              <span>LearnDash</span>
-              <span>WooCommerce</span>
-              <span>Elementor</span>
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>PostgreSQL</span>
+              <span>OpenAI API</span>
+              <span>Docker</span>
+              <span>Redis</span>
+              <span>SQL Validation</span>
+              <span>Internal Tooling</span>
+            </div>
+
+            <div class="project-visual">
+              <div class="visual-header">
+                <span>Workflow Diagram</span>
+                <small>Sanitized diagram shown instead of screenshots to protect internal data.</small>
+              </div>
+
+              <div class="workflow-diagram">
+                <span>User Question</span>
+                <span>AI Router</span>
+                <span>Query Spec</span>
+                <span>SQL Validation</span>
+                <span>Database Result</span>
+                <span>Plain-English Answer</span>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured-project">
             <div class="project-topline">
-              <span>CMS</span>
-              <span>Content Ops</span>
+              <span>Real Estate Education</span>
+              <span>Zapier Automation</span>
+              <span>Website Workflow</span>
             </div>
 
-            <h3>AI Content & CMS Workflow Automation</h3>
+            <h3>Real Estate Education Website Automation</h3>
+
+            <p class="project-client">Client: Real estate education company</p>
 
             <p>
-              Built and improved workflows around CMS publishing, SEO metadata, image handling,
-              content QA, and repeatable publishing processes for content-driven websites.
+              Built and maintained a website-connected automation flow that uses site-level conditions,
+              webhook triggers, Zapier paths, and Google Sheets updates to support course and contract-related
+              workflows for a real estate education platform.
             </p>
 
-            <ul>
-              <li>Created reusable content publishing processes</li>
-              <li>Supported automated blog and CMS workflows</li>
-              <li>Improved SEO and metadata consistency</li>
-              <li>Handled website QA and troubleshooting</li>
-            </ul>
-
-            <div class="project-stack">
-              <span>Webflow</span>
-              <span>WordPress</span>
-              <span>SEO</span>
-              <span>Automation</span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>Operations</span>
-              <span>SOPs</span>
+            <div class="case-study-block">
+              <h4>Problem</h4>
+              <p>
+                The site needed to handle different user actions and course-related conditions without
+                relying on fully manual tracking. Each path required different filtering, lookup, and
+                update logic depending on the user flow.
+              </p>
             </div>
 
-            <h3>Operations Automation & SOP Systems</h3>
+            <div class="case-study-block">
+              <h4>What I Built</h4>
+              <ul>
+                <li>Website-side logic and code snippets to trigger webhooks only after specific conditions were met</li>
+                <li>Zapier webhook intake to catch site events and route them into the correct automation path</li>
+                <li>Multi-path Zapier workflow for contracts and multiple course paths</li>
+                <li>Conditional filters to control which records continue through each path</li>
+                <li>Google Sheets lookup and update steps to keep course or contract tracking data current</li>
+                <li>Workflow troubleshooting and maintenance across the website and automation layer</li>
+              </ul>
+            </div>
 
-            <p>
-              Created systems and documentation to make recurring business processes clearer,
-              easier to hand off, and easier to maintain across tools and team members.
-            </p>
+            <div class="case-study-block">
+              <h4>Workflow Logic</h4>
+              <p>
+                Website condition met → webhook fires → Zapier catches request → path routing →
+                conditional filtering → Google Sheets lookup → matching row update.
+              </p>
+            </div>
 
-            <ul>
-              <li>Mapped manual workflows into repeatable processes</li>
-              <li>Created SOPs and handoff documentation</li>
-              <li>Connected tools using automation and APIs</li>
-              <li>Improved task tracking and operational visibility</li>
-            </ul>
+            <div class="case-study-block">
+              <h4>Why It Matters</h4>
+              <p>
+                The automation helped connect front-end website behavior with back-end tracking logic,
+                reducing manual updates and making course or contract workflows easier to manage.
+              </p>
+            </div>
 
             <div class="project-stack">
-              <span>Google Workspace</span>
-              <span>Make</span>
               <span>Zapier</span>
-              <span>SOPs</span>
+              <span>Webhooks</span>
+              <span>Google Sheets</span>
+              <span>Website Code Snippets</span>
+              <span>Conditional Logic</span>
+              <span>Real Estate Education</span>
+            </div>
+
+            <div class="project-visual">
+              <div class="visual-header">
+                <span>Workflow Preview</span>
+                <small>Zapier webhook and path-routing workflow connected to website-side conditions.</small>
+              </div>
+
+              <img
+                src="zapier-trs-webinar-quizzes-flow.png"
+                alt="Zapier automation workflow with webhook routing, course paths, filters, and Google Sheets updates"
+              />
             </div>
           </article>
         </div>
