@@ -120,7 +120,8 @@ button {
   background: rgba(255, 255, 255, 0.08);
 }
 
-.tab-button.active {
+.tab-button:focus,
+.tab-button:hover {
   color: #08111f;
   background: linear-gradient(135deg, var(--accent-2), #ffffff);
 }
@@ -308,12 +309,10 @@ main {
 }
 
 .tab-panel {
-  display: none;
-  animation: fadeUp 0.34s ease both;
-}
-
-.tab-panel.active {
   display: block;
+  scroll-margin-top: 110px;
+  margin-bottom: 64px;
+  animation: fadeUp 0.34s ease both;
 }
 
 @keyframes fadeUp {

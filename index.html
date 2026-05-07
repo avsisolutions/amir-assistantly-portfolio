@@ -24,10 +24,10 @@
         </div>
 
         <div class="nav-tabs" aria-label="Portfolio sections">
-          <button class="tab-button active" data-tab="summary">Summary</button>
-          <button class="tab-button" data-tab="skills">Skills</button>
-          <button class="tab-button" data-tab="projects">Projects</button>
-          <button class="tab-button" data-tab="experience">Experience</button>
+          <a class="tab-button" href="#summary">Summary</a>
+          <a class="tab-button" href="#skills">Skills</a>
+          <a class="tab-button" href="#projects">Projects</a>
+          <a class="tab-button" href="#experience">Experience</a>
         </div>
       </nav>
 
@@ -45,8 +45,8 @@
           </p>
 
           <div class="hero-actions">
-            <a class="primary-link" href="#projects" data-jump="projects">View Projects</a>
-            <a class="secondary-link" href="#skills" data-jump="skills">View Skills</a>
+            <a class="primary-link" href="#projects">View Projects</a>
+            <a class="secondary-link" href="#skills">View Skills</a>
           </div>
         </section>
 
@@ -602,39 +602,7 @@
   </div>
 
   <script>
-    const tabButtons = document.querySelectorAll(".tab-button");
-    const tabPanels = document.querySelectorAll(".tab-panel");
-    const jumpLinks = document.querySelectorAll("[data-jump]");
-
-    function activateTab(tabName) {
-      tabButtons.forEach((button) => {
-        button.classList.toggle("active", button.dataset.tab === tabName);
-      });
-
-      tabPanels.forEach((panel) => {
-        panel.classList.toggle("active", panel.id === tabName);
-      });
-
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        activateTab(button.dataset.tab);
-      });
-    });
-
-    jumpLinks.forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        activateTab(link.dataset.jump);
-      });
-    });
-
-    document.getElementById("year").textContent = new Date().getFullYear();
+   document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
